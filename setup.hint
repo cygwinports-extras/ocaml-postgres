@@ -1,0 +1,8 @@
+category: Database OCaml
+requires: cygwin libpq4 ocaml
+sdesc: "OCaml PostgreSQL bindings (deprecated)"
+ldesc: "This library allows an OCaml program to query a PostgreSQL
+database backend.
+
+This library has been deprecated by the 'postgresql' package,
+which has an incompatible interface to this library."

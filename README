@@ -1,0 +1,67 @@
+ocaml-postgres
+------------------------------------------
+This library allows an OCaml program to query a PostgreSQL 
+database backend.
+
+This library has been deprecated by the 'postgresql' package, 
+which has an incompatible interface to this library.
+
+Runtime requirements:
+  cygwin-1.5.25-7
+  libpq4-8.0.7-1
+  ocaml-3.09.3-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.25-7
+  binutils-20060817-1
+  cygport-0.3.8-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+  ocaml-findlib-1.2.1-1
+
+Canonical website:
+  http://alain.frisch.fr/soft#postgres
+
+Canonical download:
+  http://alain.frisch.fr/info/
+
+-------------------------------------------
+
+Build instructions:
+  unpack ocaml-postgres-20040120-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./ocaml-postgres-20040120-X.cygport all
+
+This will create:
+  /usr/src/ocaml-postgres-20040120-X-src.tar.bz2
+  /usr/src/ocaml-postgres-20040120-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/ocaml/3.10/postgres/META
+  /usr/lib/ocaml/3.10/postgres/libpostgres.a
+  /usr/lib/ocaml/3.10/postgres/postgres.a
+  /usr/lib/ocaml/3.10/postgres/postgres.cma
+  /usr/lib/ocaml/3.10/postgres/postgres.cmi
+  /usr/lib/ocaml/3.10/postgres/postgres.cmxa
+  /usr/lib/ocaml/3.10/postgres/postgres.mli
+  /usr/lib/ocaml/3.10/stublibs/dllpostgres.so
+  /usr/lib/ocaml/3.10/stublibs/dllpostgres.so.owner
+  /usr/share/doc/ocaml-postgres-20040120/Changes
+  /usr/share/doc/ocaml-postgres-20040120/README
+
+------------------
+
+Port Notes:
+
+----- version 20040120-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

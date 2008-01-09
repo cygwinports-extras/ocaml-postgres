@@ -1,0 +1,20 @@
+ORIG_PN="postgres"
+inherit ocaml
+
+DESCRIPTION="OCaml PostgreSQL bindings (deprecated)"
+HOMEPAGE="http://alain.frisch.fr/soft"
+SRC_URI="http://alain.frisch.fr/info/${ORIG_PN}-${PV}.tar.gz"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake
+}
+
+src_install() {
+	cd ${B}
+	ocaml_install
+
+	insinto ${OCAML_LIBDIR}/${ORIG_PN}
+	doins postgres.mli
+}
